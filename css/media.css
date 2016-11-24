@@ -1,0 +1,130 @@
+
+@media only screen and (max-width : 768px) {
+	body {
+		font-size: 14px;
+		line-height: 1.4;
+	}
+
+	body, section, nav, .header, .footer {
+		width: 768px;
+		margin: 0 auto;
+	}
+
+	nav ul {
+		font-size: 14px;	
+	}
+
+	nav ul li {
+		margin: 0 30px;
+		bottom: 0;
+	}
+
+	nav ul li:nth-child(1) {
+		margin: 0 20px 0 0;
+	}
+
+	.header {
+		min-height: 320px;
+		background-size: 100%;
+	}
+
+	.header .logo img {
+		width: 85%;
+	}
+
+	.header .main-header {
+		padding: 70px 0 140px;
+	}
+
+	.content .start-intro {
+		width: 60%;
+	}
+
+	.content .start-intro h2 {
+		font-size: 18px;
+	}
+
+	.content .start-intro p {
+		font-size: 12px;
+	}
+
+	.content .image-info {
+		height: 200px;
+		margin: 20px 0;
+	}
+
+	.content .image-info {
+		background-size: 500px 100%;
+	}
+
+	.content .image-info .info {
+		padding: 20px 10px;
+	}
+
+	.content .image-info .info p {
+		width: 85%;
+		font-size: 14px;
+	}
+
+	.content .image-info .info span {
+		margin: 15px 0;
+	}
+
+	.content .image-info:nth-child(4) .info h3 {
+		width: 49.4%;
+	}
+
+	.content .features:nth-child(5) {
+		height: 390px;
+	}
+
+	.content .features .item {
+		height: 200px;
+		font-size: 14px;
+	}
+
+	.content .features .item p {
+		width: 85%;
+		font-size: 12px;
+	}
+
+	.content .features .item span {
+		margin: 15px 0;
+	}
+
+	.search .search-intro h2 {
+		margin: 30px 0;
+	}
+
+	.search .search-intro p {
+		width: 60%;
+		font-size: 14px;
+	}
+
+	.btn-social {
+		width: 45px;
+		height: 45px;
+		background-color: #81b3d2;
+		margin: 1px;
+	}
+
+	.map iframe {
+		width: 768px;
+		height: 600px;
+	}
+
+	.footer {
+		margin-top: -120px;
+		height: 120px;
+		padding: 30px 50px;
+	}
+
+	.hash-tag {
+		font-size: 20px;
+		margin-top: 15px;
+	}
+
+	.socials {
+		margin-left: 30px;
+	}
+}

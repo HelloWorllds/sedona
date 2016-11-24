@@ -1,0 +1,156 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Sedona</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/media.css">
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li class="left">Информация</li>
+				<li class="left">Фото и видео</li>
+				<li class="right">Карта штата</li>
+				<li class="right">Гостиницы</li>
+			</ul>
+		</nav>
+
+		<header class="header">
+			<div class="logo">
+				<img src="assets\images\logo.png" alt="logo">
+			</div>
+			<div class="main-header">
+				<img src="assets\images\header-text.png" alt="header">
+			</div>
+			<div class="overlay">
+				<div class="figure"></div>
+			</div>
+		</header>
+		
+		<section class="content">
+			<div class="start-intro">
+				<h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+				<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+			</div>
+			<div class="image-info right">
+				<div class="info">
+					<h3>Настоящий городок</h3>
+					<span>— №1 —</span>
+					<p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+				</div>
+			</div>
+			<div class="features">
+				<div class="item">
+					<img src="assets\images\icons\house.png" alt="house">
+					<h4>Жилье</h4>
+					<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+				</div>
+				<div class="item">
+					<img src="assets\images\icons\burger.png" alt="food">
+					<h4>Еда</h4>
+					<p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+				</div>
+				<div class="item">
+					<img src="assets\images\icons\gift.png" alt="acssessories">
+					<h4>Сувениры</h4>
+					<p>Не только китайского, но и местного производства!</p>
+				</div>
+			</div>
+			<div class="image-info left">
+				<div class="info">
+					<h3>Там есть мост дьявола</h3>
+					<span>— №2 —</span>
+					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+				</div>
+			</div>
+			<div class="features">
+				<div class="item">
+					<h4>Небольшая площадь</h4>
+					<span>— №3 —</span>
+					<p>Все достопримечательности находяться очень близко</p>
+				</div>
+				<div class="item">
+					<h4>Красивая Дорога</h4>
+					<span>— №4 —</span>
+					<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+				</div>
+				<div class="item">
+					<h4>Мало туристов</h4>
+					<span>— №5 —</span>
+					<p>Большинство едет в гранд каньон и толпится там</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="search">
+			<div class="search-intro">
+				<h2>Заинтересовались?</h2>
+				<p>
+					Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне
+				</p>		
+			</div>
+			<button class="btn btn-search">Поиск гостиниц в Седоне</button>
+			<div class="form-wrapper animate">
+				<form action="some.js" method="post">
+					<label for="d-come">Дата заезда:</label>
+					<input type="text" id="d-come" placeholder="24 апреля 2016">
+					<br>
+					<label for="d-go">Дата выезда:</label>
+					<input type="text" id="d-go" placeholder="4 июля 2016">
+					<br>
+
+					<label for="adults">Взрослые:</label>
+					<button class="btn btn-input">&ndash;</button>
+					<input type="text" id="adults" placeholder="2">
+					<button class="btn btn-input">+</button>
+					<label for="kids">Дети:</label>
+					<button class="btn btn-input">&ndash;</button>
+					<input type="text" id="kids" placeholder="0">
+					<button class="btn btn-input">+</button>
+					<br>
+
+					<input type="submit" value="Найти" class="btn btn-form">
+				</form>
+			</div>
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d352537.4027936582!2d-111.95820094247833!3d34.82323705806235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1479226874718" frameborder="0" style="border:0"></iframe>
+			</div>			
+		</section>
+
+		<footer class="footer">
+			<div class="hash-tag">#visitSEDONA</div>
+			<div class="socials">
+				<button class="btn btn-social">
+					<img src="assets\images\icons\twitter.png" alt="twitter">
+				</button>
+				<button class="btn btn-social">
+					<img src="assets\images\icons\facebook.png" alt="facebook">
+				</button>
+				<button class="btn btn-social">
+					<img src="assets\images\icons\youtube.png" alt="youtube">
+				</button>
+			</div>
+			<div class="author">
+				<p>Website by</p>
+				<img src="assets\images\developer.png" alt="author logo">
+			</div>
+		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".btn-search").click(function() {					
+					if($('.form-wrapper').css('display') == 'none'){ 
+						$(".form-wrapper").css("display", "block");
+					} else {
+						$(".form-wrapper").css("display", "none");
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

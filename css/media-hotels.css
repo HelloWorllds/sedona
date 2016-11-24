@@ -1,0 +1,126 @@
+
+@media only screen and (max-width : 768px) {
+	body {
+		font-size: 14px;
+		line-height: 1.4;
+	}
+
+	body, section, nav, .header, .footer {
+		width: 768px;
+		margin: 0 auto;
+	}
+
+	nav ul {
+		font-size: 14px;	
+	}
+
+	nav ul li {
+		margin: 0 30px;
+		bottom: 0;
+	}
+
+	nav ul li:nth-child(1) {
+		margin: 0 20px 0 0;
+	}
+
+	.header .logo img {
+		width: 85%;
+	}
+
+	.header .filter {
+		padding: 20px 40px;
+	}
+
+	.header .filter .checks-filter label {
+		width: 100px;	
+		padding-left: 32px;
+	}
+
+	.header .filter .checks-filter .infrastructure {
+		margin-right: 30px;
+	}
+
+	.header .filter .price-filter .price-input {
+		width: 280px;
+		margin-bottom: 10px;
+	}
+
+	.header .filter .price-filter .price-input input {
+		height: 80%;
+		width: 137px;
+		font-size: 13px;
+	}
+
+	.header .filter .price-filter .price-input input:nth-child(1) {
+		top: 3px;
+	}
+
+	.header .filter .price-filter .price-input input:nth-child(2) {
+		top: 3px;
+	}
+
+	.header .filter .price-filter [type="range"] {
+		width: 137px;
+	}
+
+	.main .sort {
+		padding: 15px 40px;
+	}
+
+	.main .sort .sort-count {
+		width: 140px;
+	}
+
+	.main .sorted .items .item {
+		padding: 10px 40px;
+	}
+
+	.main .sorted .items .item .picture img {
+		width: 100%;
+	}
+
+	.main .sorted .items .item .content h3 {
+		font-size: 20px;
+	}
+
+	.main .sorted .items .item .content p {
+		font-size: 13px;
+	}
+
+	.main .sorted .items .item .rating .rating-count {
+		bottom: -10px;
+		font-size: 13px;
+	}
+
+	.main .sorted .items .item .rating .stars {
+		top: 10px;
+		margin-bottom: 40px;
+	}
+
+	.btn-blue {
+		font-size: 12px;
+	}
+
+	.btn-brown {
+		font-size: 12px;
+	}
+
+	.btn-filter {
+		font-size: 13px;
+		margin-top: 25px;
+	}
+
+	.footer {
+		height: 120px;
+		padding: 30px 50px;
+	}
+
+	.hash-tag {
+		font-size: 20px;
+		margin-top: 15px;
+	}
+
+	.socials {
+		margin-left: 30px;
+	}
+}
