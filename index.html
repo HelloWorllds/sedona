@@ -21,7 +21,7 @@
 
 		<header class="header">
 			<div class="logo">
-				<img src="assets\images\logo.png" alt="logo">
+				<a href="#"><img src="assets\images\logo.png" alt="logo"></a>
 			</div>
 			<div class="main-header">
 				<img src="assets\images\header-text.png" alt="header">
@@ -93,24 +93,26 @@
 					Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне
 				</p>		
 			</div>
-			<button class="btn btn-search">Поиск гостиниц в Седоне</button>
+			<button type="button" class="btn btn-search">Поиск гостиниц в Седоне</button>
 			<div class="form-wrapper animate">
-				<form action="some.js" method="post">
+				<form>
 					<label for="d-come">Дата заезда:</label>
 					<input type="text" id="d-come" placeholder="24 апреля 2016">
+					<div class="calendar arrival"></div>
 					<br>
 					<label for="d-go">Дата выезда:</label>
 					<input type="text" id="d-go" placeholder="4 июля 2016">
+					<div class="calendar departure"></div>
 					<br>
 
 					<label for="adults">Взрослые:</label>
-					<button class="btn btn-input">&ndash;</button>
+					<button type="button" class="btn btn-input">&ndash;</button>
 					<input type="text" id="adults" placeholder="2">
-					<button class="btn btn-input">+</button>
+					<button type="button" class="btn btn-input">+</button>
 					<label for="kids">Дети:</label>
-					<button class="btn btn-input">&ndash;</button>
+					<button type="button" class="btn btn-input">&ndash;</button>
 					<input type="text" id="kids" placeholder="0">
-					<button class="btn btn-input">+</button>
+					<button type="button" class="btn btn-input">+</button>
 					<br>
 
 					<input type="submit" value="Найти" class="btn btn-form">
@@ -124,19 +126,18 @@
 		<footer class="footer">
 			<div class="hash-tag">#visitSEDONA</div>
 			<div class="socials">
-				<button class="btn btn-social">
+				<button type="button" class="btn btn-social">
 					<img src="assets\images\icons\twitter.png" alt="twitter">
 				</button>
-				<button class="btn btn-social">
+				<button type="button" class="btn btn-social">
 					<img src="assets\images\icons\facebook.png" alt="facebook">
 				</button>
-				<button class="btn btn-social">
+				<button type="button" class="btn btn-social">
 					<img src="assets\images\icons\youtube.png" alt="youtube">
 				</button>
 			</div>
 			<div class="author">
 				<p>Website by</p>
-				<img src="assets\images\developer.png" alt="author logo">
 			</div>
 		</footer>
 

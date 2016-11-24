@@ -1,5 +1,7 @@
 * {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 body {
@@ -9,7 +11,9 @@ body {
 	line-height: 1.6;
 	text-align: center;
 	text-transform: uppercase;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 body, section, nav, .header, .footer {
@@ -41,6 +45,10 @@ nav ul li {
 	cursor: pointer;
 	margin: 0 50px;
 	bottom: 10px;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 nav ul li:hover {
@@ -76,7 +84,10 @@ nav ul:after {
 	background-image: url(../assets/images/header-bg.png);
 	background-position: 0px 0px;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	-webkit-background-size: 100% 100%;
+	   -moz-background-size: 100%;
+	     -o-background-size: 100%;
+	        background-size: 100%;
 	text-align: center;
 }
 
@@ -121,7 +132,10 @@ nav ul:after {
 	background-image: url(../assets/images/header-overlay.png);
 	background-position: 0px 0px;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	-webkit-background-size: 100% 50px;
+	   -moz-background-size: 100% 50px;
+	     -o-background-size: 100% 50px;
+	        background-size: 100% 50px;
 }
 
 .content .start-intro {
@@ -130,37 +144,36 @@ nav ul:after {
 }
 
 .content .image-info {
+	display: block;
 	width: 100%;
-	height: 255px;
+	height: auto;
 	background-color: #81b3d2;
 	color: white;
 	margin: 50px 0;
+	padding: 0 0 10px;
 }
 
-.content .image-info:after {
-	content: '';
-	width: 100%;
-	height: 1px;
-	clear: both;
+.content .image-info .info {
+	display: block;
+	height: auto;
 }
 
 .content .image-info {
 	background-repeat: no-repeat;
-	background-size: 800px 100%;
+	-webkit-background-size: 66% 100%;
+	   -moz-background-size: 66% 100%;
+	     -o-background-size: 66% 100%;
+	        background-size: 66% 100%;
 }
 
 .content .image-info .info {
+	display: block;
 	width: 33.333%;
 	height: 100%;
 	padding: 40px 10px;
-	box-sizing: border-box;
-}
-
-.content .image-info .info:after {
-	content: '';
-	width: 100%;
-	height: 1px;
-	clear: both;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 .content .image-info .info h3 {
@@ -379,16 +392,29 @@ nav ul:after {
 }
 
 .author {
+	display: block;
+	width: 210px;
 	float: right;
-	margin-top: 10px;
+	background-image: url(../assets/images/developer.png);
+	background-position: 90px 0px;
+	background-repeat: no-repeat;
+	text-align: left;
+	cursor: pointer;
+}
+
+.author:hover {
+	background-image: url(../assets/images/developer-hover.png);
+}
+
+.author:active {
+	background-image: url(../assets/images/developer-active.png);
 }
 
 .author p {
 	display: inline-block;
-	margin-right: 10px;
 	font-size: 14px;
 	position: relative;
-	top: -15px;
+	top: -5px;
 }
 
 .socials {
@@ -405,6 +431,7 @@ nav ul:after {
 }
 
 .form-wrapper form {
+	position: relative;
 	width: 572px;
 	height: 400px;
 	background-color: white;
@@ -444,8 +471,8 @@ nav ul:after {
 	background-color: #ebebeb;
 }
 
-.form-wrapper form [type="text"]:nth-child(9),
-.form-wrapper form [type="text"]:nth-child(13) {
+.form-wrapper form [type="text"]:nth-child(11),
+.form-wrapper form [type="text"]:nth-child(15) {
 	width: 40px;
 	height: 40px;
 	margin-left: -4px;
@@ -454,51 +481,118 @@ nav ul:after {
 	text-indent: 0;
 }
 
-.form-wrapper form [type="text"]:nth-child(2),
-.form-wrapper form [type="text"]:nth-child(5) {
-	background-image: url(../assets/images/icons/calendar.png);
-	background-repeat: no-repeat;
-	background-position: 320px center;
-}
-
-.form-wrapper form label:nth-child(7) {
+.form-wrapper form label:nth-child(9) {
 	margin-right: 39px;
 	margin-left: -1px;
 }
 
-.form-wrapper form label:nth-child(11) {
+.form-wrapper form label:nth-child(13) {
 	margin-right: 34px;
 	margin-left: 35px;
 }
 
+.form-wrapper form .calendar {
+	display: block;
+	position: absolute;
+	height: 25px;
+	width: 25px;
+	background-image: url(../assets/images/icons/calendar.png);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.form-wrapper form .calendar:hover {
+	background-image: url(../assets/images/icons/calendars-hover.png);
+}
+
+.form-wrapper form .calendar:active {
+	background-image: url(../assets/images/icons/calendars-active.png);
+}
+
+.calendar.arrival {
+	top: 60px;
+	right: 60px;
+}
+.calendar.departure {
+	top: 120px;
+	right: 60px;
+}
 
 .animate {
 	-webkit-animation: animate 0.5s;
-			animation: animate 0.5s;
+			-moz-animation: animate 0.5s;
+			  -o-animation: animate 0.5s;
+	     animation: animate 0.5s;
 }
 
 @-webkit-keyframes animate {
 	from {
-		transform-origin: center top;
+		-webkit-transform-origin: center top;
+		        transform-origin: center top;
 		-webkit-transform: scaleY(0);
 				transform: scaleY(0);
 	}
 	to {
-		transform-origin: center top;
+		-webkit-transform-origin: center top;
+		        transform-origin: center top;
 	    -webkit-transform: scaleY(1);
 	            transform: scaleY(1);
+	}
+}
+
+@-moz-keyframes animate {
+	from {
+		-moz-transform-origin: center top;
+		     transform-origin: center top;
+		-webkit-transform: scaleY(0);
+		    	-moz-transform: scaleY(0);
+		     transform: scaleY(0);
+	}
+	to {
+		-moz-transform-origin: center top;
+		     transform-origin: center top;
+	    -webkit-transform: scaleY(1);
+	            -moz-transform: scaleY(1);
+	         transform: scaleY(1);
+	}
+}
+
+@-o-keyframes animate {
+	from {
+		-o-transform-origin: center top;
+		   transform-origin: center top;
+		-webkit-transform: scaleY(0);
+		    	-o-transform: scaleY(0);
+		   transform: scaleY(0);
+	}
+	to {
+		-o-transform-origin: center top;
+		   transform-origin: center top;
+	    -webkit-transform: scaleY(1);
+	            -o-transform: scaleY(1);
+	       transform: scaleY(1);
 	}
 }
 
 @keyframes animate {
 	from {
-		transform-origin: center top;
+		-webkit-transform-origin: center top;
+		   -moz-transform-origin: center top;
+		     -o-transform-origin: center top;
+		        transform-origin: center top;
 		-webkit-transform: scaleY(0);
-		    	transform: scaleY(0);
+		    	-moz-transform: scaleY(0);
+		    	  -o-transform: scaleY(0);
+		     transform: scaleY(0);
 	}
 	to {
-		transform-origin: center top;
+		-webkit-transform-origin: center top;
+		   -moz-transform-origin: center top;
+		     -o-transform-origin: center top;
+		        transform-origin: center top;
 	    -webkit-transform: scaleY(1);
-	            transform: scaleY(1);
+	            -moz-transform: scaleY(1);
+	              -o-transform: scaleY(1);
+	         transform: scaleY(1);
 	}
 }

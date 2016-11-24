@@ -1,5 +1,7 @@
 * {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 body {
@@ -9,7 +11,9 @@ body {
 	line-height: 1.6;
 	text-align: center;
 	text-transform: uppercase;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 body, section, nav, .header, .footer {
@@ -41,6 +45,10 @@ nav ul li {
 	cursor: pointer;
 	margin: 0 50px;
 	bottom: 10px;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 nav ul li:hover {
@@ -76,7 +84,10 @@ nav ul:after {
 	background-image: url(../assets/images/filter-bg.png);
 	background-position: 0px 0px;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	-webkit-background-size: 100% 100%;
+	   -moz-background-size: 100%;
+	     -o-background-size: 100%;
+	        background-size: 100%;
 	text-align: center;
 }
 
@@ -120,6 +131,10 @@ nav ul:after {
 	background-repeat: no-repeat;
 	background-position: left center;
 	cursor: pointer;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .header .filter .checks-filter .infrastructure {
@@ -151,7 +166,9 @@ nav ul:after {
 	width: 320px;
 	height: 35px;
 	border: 2px solid white;
-	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
 	margin-bottom: 15px;
 }
 
@@ -190,7 +207,8 @@ nav ul:after {
 	position: relative;
 	width: 20px;
 	height: 20px;
-	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	        border-radius: 20px;
 	border: 8px solid white;
 	background-color: #ababab;
 	cursor: pointer;
@@ -520,7 +538,9 @@ nav ul:after {
 	width: 140px;
 	height: 35px;
 	border: 2px solid white;
-	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
 	background-color: transparent;
 	margin: 0 auto;
 	font-family: "PTSans", sans-serif;
@@ -574,16 +594,29 @@ nav ul:after {
 }
 
 .author {
+	display: block;
+	width: 210px;
 	float: right;
-	margin-top: 10px;
+	background-image: url(../assets/images/developer.png);
+	background-position: 90px 0px;
+	background-repeat: no-repeat;
+	text-align: left;
+	cursor: pointer;
+}
+
+.author:hover {
+	background-image: url(../assets/images/developer-hover.png);
+}
+
+.author:active {
+	background-image: url(../assets/images/developer-active.png);
 }
 
 .author p {
 	display: inline-block;
-	margin-right: 10px;
 	font-size: 14px;
 	position: relative;
-	top: -15px;
+	top: -5px;
 }
 
 .socials {
