@@ -1,7 +1,7 @@
 <!Doctype html>
 <html>
 	<head>
-		<title>Sedona</title>
+		<title>Sedona-hotels</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -63,12 +63,13 @@
 				<div class="price-filter right">
 					<h3>Стоимость в сутки($): </h3>
 					<div class="price-input">
-						<input type="text" value="От 0" disabled>
-						<input type="text" value="До 3000" disabled>
+						<input type="text" value="От 0" class="price-input-from" id="from">
+						<input type="text" value="До 3000" class="price-input-to" id="to">
 					</div>
-					<div class="range-input">
-						<input type="range">
-						<input type="range">
+					<div class="range-input">						
+						<input type="range" value="0" min="0" max="3500" step="100" class="sliders">
+						<input type="range" value="3000" min="0" max="3500" step="100" class="sliders">
+						<span class="bar"></span>
 					</div>
 					<button class="btn btn-filter">Показать</button>
 				</div>
@@ -111,7 +112,7 @@
 							<button class="btn btn-brown">Забронировать</button>
 						</div>
 						<div class="rating right">
-							<div class="stars"></div>
+							<div class="stars four"></div>
 							<div class="rating-count">
 								<label>Рейтинг: </label>
 								<label>8,5</label>
@@ -132,7 +133,7 @@
 							<button class="btn btn-brown">Забронировать</button>
 						</div>
 						<div class="rating right">
-							<div class="stars"></div>
+							<div class="stars two"></div>
 							<div class="rating-count">
 								<label>Рейтинг: </label>
 								<label>8,9</label>
@@ -153,7 +154,49 @@
 							<button class="btn btn-brown">Забронировать</button>
 						</div>
 						<div class="rating right">
-							<div class="stars"></div>
+							<div class="stars three"></div>
+							<div class="rating-count">
+								<label>Рейтинг: </label>
+								<label>9,2</label>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="picture">
+							<img src="assets\images\villas.png">
+						</div>
+						<div class="content">
+							<h3>Villas at Poco Diablo</h3>
+							<div class="type-price">
+								<p>Апартаменты</p>
+								<p>От 4000$</p>
+							</div>
+							<button class="btn btn-blue">Подробнее</button>
+							<button class="btn btn-brown">Забронировать</button>
+						</div>
+						<div class="rating right">
+							<div class="stars five"></div>
+							<div class="rating-count">
+								<label>Рейтинг: </label>
+								<label>9,2</label>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="picture">
+							<img src="assets\images\villas.png">
+						</div>
+						<div class="content">
+							<h3>Villas at Poco Diablo</h3>
+							<div class="type-price">
+								<p>Апартаменты</p>
+								<p>От 4000$</p>
+							</div>
+							<button class="btn btn-blue">Подробнее</button>
+							<button class="btn btn-brown">Забронировать</button>
+						</div>
+						<div class="rating right">
+							<div class="stars one"></div>
 							<div class="rating-count">
 								<label>Рейтинг: </label>
 								<label>9,2</label>
@@ -182,5 +225,8 @@
 				<img src="assets\images\developer.png" alt="author logo">
 			</div>
 		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="js/common.js"></script>
 	</body>
 </html>

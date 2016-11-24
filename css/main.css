@@ -17,6 +17,13 @@ body, section, nav, .header, .footer {
 	margin: 0 auto;
 }
 
+input,
+input:focus,
+input:active,
+input:hover {
+	outline: none;
+}
+
 nav {
 	display: block;
 	height: 50px;

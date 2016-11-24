@@ -17,6 +17,13 @@ body, section, nav, .header, .footer {
 	margin: 0 auto;
 }
 
+input,
+input:focus,
+input:active,
+input:hover {
+	outline: none;
+}
+
 nav {
 	display: block;
 	height: 50px;
@@ -173,9 +180,9 @@ nav ul:after {
 
 .header .filter .price-filter [type="range"] {
 	-webkit-appearance: none;
-	width: 157px;
+	width: 314px;
 	height: 2px;
-	background-color: rgba(255, 255, 255, 0.5);	
+	background-color: rgba(255, 255, 255, 0.2);	
 }
 
 .header .filter .price-filter [type="range"]::-webkit-slider-thumb {
@@ -187,6 +194,7 @@ nav ul:after {
 	border: 8px solid white;
 	background-color: #ababab;
 	cursor: pointer;
+	z-index: 10;
 }
 
 .header .filter .price-filter [type="range"]::-webkit-slider-thumb:hover {
@@ -198,7 +206,19 @@ nav ul:after {
 }
 
 .header .filter .price-filter [type="range"]:nth-child(2) {
-	margin-left: -6px;
+	margin-left: -320px;
+}
+
+.header .filter .price-filter .range-input .bar {
+	display: block;
+	height: 2px;
+	width: 245px;
+	background-color: white;
+	position: relative;
+	top: -9px;
+	left: 15px;
+	right: 50px;
+	z-index: 5;
 }
 
 .main {
@@ -406,23 +426,30 @@ nav ul:after {
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 110px;
 	height: 20px;
 	background-image: url(../assets/images/elements/star.png);
 	background-repeat: repeat-x;
 	margin-bottom: 50px;
 }
 
-.main .sorted .items .item:nth-child(1) .rating .stars {
-	width: 90px;
+.stars.one {
+	width: 20px;
 }
 
-.main .sorted .items .item:nth-child(2) .rating .stars {
+.stars.two {
 	width: 40px;
 }
 
-.main .sorted .items .item:nth-child(3) .rating .stars {
-	width: 60px;
+.stars.three {
+	width: 65px;
+}
+
+.stars.four {
+	width: 90px;
+}
+
+.stars.five {
+	width: 110px;
 }
 
 .main .sorted .items .item .content h3:hover {
