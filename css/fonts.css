@@ -2,12 +2,14 @@
   font-family: "PTSans";
   font-style: normal;
   font-weight: normal;
-  src: url("../assets/fonts/web/ptsans.woff") format("woff");
+  src: url("../fonts/web/ptsans.woff") format("woff");
+  src: url("../fonts/web/ptsans.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "PTSansBold";
   font-style: normal;
   font-weight: normal;
-  src: url("../assets/fonts/web/ptsansbold.woff") format("woff");
+  src: url("../fonts/web/ptsansbold.woff") format("woff");
+  src: url("../fonts/web/ptsansbold.ttf") format("truetype");
 }

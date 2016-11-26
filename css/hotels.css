@@ -1,7 +1,7 @@
 * {
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
+			box-sizing: border-box;
 }
 
 body {
@@ -19,6 +19,10 @@ body {
 body, section, nav, .header, .footer {
 	width: 1200px;
 	margin: 0 auto;
+}
+
+a img, :link img, :visited img {
+	border: 0;
 }
 
 input,
@@ -90,7 +94,8 @@ nav ul:after {
 	display: block;
 	position: relative;
 	min-height: 250px;
-	background-image: url(../assets/images/filter-bg.png);
+	background-color: #6f93b5;
+	background-image: url(../img/filter-bg.png);
 	background-position: 0px 0px;
 	background-repeat: no-repeat;
 	-webkit-background-size: 100% 100%;
@@ -106,6 +111,8 @@ nav ul:after {
 	left: 50%;
 	width: 150px;
 	margin-left: -75px;
+	border: none;
+	outline: none;
 }
 
 .header .logo img {
@@ -136,7 +143,7 @@ nav ul:after {
 .header .filter .checks-filter label {
 	width: 150px;	
 	padding-left: 42px; 
-	background-image: url(../assets/images/elements/checkbox.png);
+	background-image: url(../img/elements/checkbox.png);
 	background-repeat: no-repeat;
 	background-position: left center;
 	cursor: pointer;
@@ -166,7 +173,7 @@ nav ul:after {
 #type-1:checked ~ label,
 #type-2:checked ~ label,
 #type-3:checked ~ label {
-	background-image: url(../assets/images/elements/checkbox-checked.png);
+	background-image: url(../img/elements/checkbox-checked.png);
 	background-repeat: no-repeat;
 	background-position: left center;
 }
@@ -211,6 +218,18 @@ nav ul:after {
 	background-color: rgba(255, 255, 255, 0.2);	
 }
 
+.header .filter .price-filter [type="range"]::-ms-track {	
+	width: 314px;
+	height: 2px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border: transparent;
+}
+
+.header .filter .price-filter [type="range"]::-ms-fill-lower,
+.header .filter .price-filter [type="range"]::-ms-fill-upper {
+	background: transparent;
+}
+
 .header .filter .price-filter [type="range"]::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	position: relative;
@@ -224,7 +243,33 @@ nav ul:after {
 	z-index: 10;
 }
 
+.header .filter .price-filter [type="range"]::-moz-range-thumb {
+	position: relative;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	border: 8px solid white;
+	background-color: #ababab;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.header .filter .price-filter [type="range"]::-ms-thumb {
+	position: relative;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	border: 8px solid white;
+	background-color: #ababab;
+	cursor: pointer;
+	z-index: 10;
+}
+
 .header .filter .price-filter [type="range"]::-webkit-slider-thumb:hover {
+	background-color: #1c4f80;
+}
+
+.header .filter .price-filter [type="range"]::-moz-range-thumb:hover {
 	background-color: #1c4f80;
 }
 
@@ -454,7 +499,7 @@ nav ul:after {
 	top: 0;
 	right: 0;
 	height: 20px;
-	background-image: url(../assets/images/elements/star.png);
+	background-image: url(../img/elements/star.png);
 	background-repeat: repeat-x;
 	margin-bottom: 50px;
 }
@@ -606,7 +651,7 @@ nav ul:after {
 	display: block;
 	width: 210px;
 	float: right;
-	background-image: url(../assets/images/developer.png);
+	background-image: url(../img/developer.png);
 	background-position: 90px 0px;
 	background-repeat: no-repeat;
 	text-align: left;
@@ -614,11 +659,11 @@ nav ul:after {
 }
 
 .author:hover {
-	background-image: url(../assets/images/developer-hover.png);
+	background-image: url(../img/developer-hover.png);
 }
 
 .author:active {
-	background-image: url(../assets/images/developer-active.png);
+	background-image: url(../img/developer-active.png);
 }
 
 .author p {

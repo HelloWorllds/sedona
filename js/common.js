@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	$(".form-wrapper").css("display", "none");	
 
 	$(".btn-search").click(function() {					
 		if($('.form-wrapper').css('display') == 'none'){ 

@@ -1,7 +1,7 @@
 * {
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
+			box-sizing: border-box;
 }
 
 body {
@@ -19,6 +19,10 @@ body {
 body, section, nav, .header, .footer {
 	width: 1200px;
 	margin: 0 auto;
+}
+
+a img, :link img, :visited img {
+	border: 0;
 }
 
 input,
@@ -90,7 +94,8 @@ nav ul:after {
 	display: block;
 	position: relative;
 	min-height: 640px;
-	background-image: url(../assets/images/header-bg.png);
+	background-color: #ddebf4;
+	background-image: url(../img/header-bg.png);
 	background-position: 0px 0px;
 	background-repeat: no-repeat;
 	-webkit-background-size: 100% 100%;
@@ -138,7 +143,7 @@ nav ul:after {
 	position: relative;
 	bottom: 50px;
 	height: 50px;
-	background-image: url(../assets/images/header-overlay.png);
+	background-image: url(../img/header-overlay.png);
 	background-position: 0px 0px;
 	background-repeat: no-repeat;
 	-webkit-background-size: 100% 50px;
@@ -204,7 +209,7 @@ nav ul:after {
 }
 
 .content .image-info:nth-child(2) {
-	background-image: url(../assets/images/pic1.png);
+	background-image: url(../img/pic1.png);
 	background-position: top right;
 }
 
@@ -213,7 +218,7 @@ nav ul:after {
 }
 
 .content .image-info:nth-child(4) {
-	background-image: url(../assets/images/pic2.png);
+	background-image: url(../img/pic2.png);
 	background-position: top left;
 	margin-top: 0px;
 }
@@ -229,6 +234,7 @@ nav ul:after {
 .content .features {
 	display: block;
 	font-size: 0px;
+	-webkit-font-size: 0px;
 	margin: 10px 0;
 }
 
@@ -239,7 +245,7 @@ nav ul:after {
 
 .content .features .item {
 	display: inline-block;
-	width: 33.333%;
+	width: 33%;
 	height: 255px;
 	font-size: 16px;
 }
@@ -336,11 +342,13 @@ nav ul:after {
 	width: 40px;
 	height: 40px;
 	position: relative;
-	top: 5px;
+	top: -3px;
 	background-color: #f2f2f2;
 	color: #a9a9a9;
 	font-size: 30px;
 	padding: 0;
+	line-height: 35px;
+	vertical-align: middle;
 }
 
 .btn-input:hover {
@@ -370,6 +378,14 @@ nav ul:after {
 .map {
 	display: block;
 	width: 100%;
+	background-color: #cbdda9;
+	background-image: url(../img/map.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 100%;
+	   -moz-background-size: 100%;
+	     -o-background-size: 100%;
+	        background-size: 100%;
 }
 
 .map iframe {
@@ -404,7 +420,7 @@ nav ul:after {
 	display: block;
 	width: 210px;
 	float: right;
-	background-image: url(../assets/images/developer.png);
+	background-image: url(../img/developer.png);
 	background-position: 90px 0px;
 	background-repeat: no-repeat;
 	text-align: left;
@@ -412,11 +428,11 @@ nav ul:after {
 }
 
 .author:hover {
-	background-image: url(../assets/images/developer-hover.png);
+	background-image: url(../img/developer-hover.png);
 }
 
 .author:active {
-	background-image: url(../assets/images/developer-active.png);
+	background-image: url(../img/developer-active.png);
 }
 
 .author p {
@@ -432,7 +448,7 @@ nav ul:after {
 }
 
 .form-wrapper {
-	display: none;
+	display: block;
 	position: absolute;
 	left: 50%;
 	width: 571px;
@@ -505,17 +521,17 @@ nav ul:after {
 	position: absolute;
 	height: 25px;
 	width: 25px;
-	background-image: url(../assets/images/icons/calendar.png);
+	background-image: url(../img/icons/calendar.png);
 	background-repeat: no-repeat;
 	cursor: pointer;
 }
 
 .form-wrapper form .calendar:hover {
-	background-image: url(../assets/images/icons/calendars-hover.png);
+	background-image: url(../img/icons/calendars-hover.png);
 }
 
 .form-wrapper form .calendar:active {
-	background-image: url(../assets/images/icons/calendars-active.png);
+	background-image: url(../img/icons/calendars-active.png);
 }
 
 .calendar.arrival {
